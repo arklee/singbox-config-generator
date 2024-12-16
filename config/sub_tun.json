@@ -1,0 +1,1790 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "proxy_dns",
+        "address": "tls://8.8.8.8/dns-query",
+        "detour": "select"
+      },
+      {
+        "tag": "local_dns",
+        "address": "h3://223.5.5.5/dns-query",
+        "detour": "direct"
+      },
+      {
+        "tag": "reject",
+        "address": "rcode://refused"
+      },
+      {
+        "tag": "fake_ip",
+        "address": "fakeip"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "local_dns",
+        "disable_cache": true
+      },
+      {
+        "clash_mode": "Global",
+        "server": "proxy_dns"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "local_dns"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "local_dns"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "proxy_dns"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "fake_ip"
+      }
+    ],
+    "final": "proxy_dns",
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "independent_cache": true
+  },
+  "ntp": {
+    "enabled": true,
+    "interval": "30m0s",
+    "server": "time.apple.com",
+    "server_port": 123,
+    "detour": "direct"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "mtu": 9000,
+      "address": [
+        "172.16.0.1/30",
+        "fd00::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "prefer_ipv4"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "reject"
+    },
+    {
+      "type": "dns",
+      "tag": "dns_out"
+    },
+    {
+      "type": "trojan",
+      "tag": "最新网址：fatcatcloud.cc",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53501,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "剩余流量：254.5 GB",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53501,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "距离下次重置剩余：5 天",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53501,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "套餐到期：2025-02-20",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53501,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-01",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53501,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-02",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53502,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-03",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53503,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-04",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53504,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-05",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53505,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-06",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53506,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-07",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53507,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-08",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53508,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-09",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53509,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-10",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53510,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-11",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53511,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-12",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53512,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-13",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53513,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-14",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53514,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-15",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53515,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-16",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53516,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-17",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53517,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-18",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53518,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-19",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53519,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港 HK-20",
+      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server_port": 53520,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-01",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53521,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-02",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53522,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-03",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53523,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-04",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53524,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-05",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53525,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-06",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53526,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-07",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53527,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-08",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53528,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-09",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53529,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 台湾 TW-10",
+      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server_port": 53530,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-01",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53531,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-02",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53532,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-03",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53533,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-04",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53534,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-05",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53535,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-06",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53536,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-07",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53537,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-08",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53538,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-09",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53539,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 SG-10",
+      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server_port": 53540,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-01",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53541,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-02",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53542,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-03",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53543,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-04",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53544,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-05",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53545,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-06",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53546,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-07",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53547,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-08",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53548,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-09",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53549,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 JP-10",
+      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server_port": 53550,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-01",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53551,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-02",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53552,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-03",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53553,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-04",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53554,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-05",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53555,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-06",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53556,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-07",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53557,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-08",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53558,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-09",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53559,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 US-10",
+      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server_port": 53560,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 KR-01",
+      "server": "nbaqz0v1meo0k3d-kr.fcnode.net",
+      "server_port": 53561,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 KR-02",
+      "server": "nbaqz0v1meo0k3d-kr.fcnode.net",
+      "server_port": 53562,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 MY-01",
+      "server": "nbaqz0v1meo0k3d-my.fcnode.net",
+      "server_port": 53563,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 MY-02",
+      "server": "nbaqz0v1meo0k3d-my.fcnode.net",
+      "server_port": 53564,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 泰国 TH-01",
+      "server": "nbaqz0v1meo0k3d-th.fcnode.net",
+      "server_port": 53565,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 泰国 TH-02",
+      "server": "nbaqz0v1meo0k3d-th.fcnode.net",
+      "server_port": 53566,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇭 菲律宾 PH-01",
+      "server": "nbaqz0v1meo0k3d-ph.fcnode.net",
+      "server_port": 53567,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇭 菲律宾 PH-02",
+      "server": "nbaqz0v1meo0k3d-ph.fcnode.net",
+      "server_port": 53568,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇻🇳 越南 VN-01",
+      "server": "nbaqz0v1meo0k3d-vn.fcnode.net",
+      "server_port": 53569,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇻🇳 越南 VN-02",
+      "server": "nbaqz0v1meo0k3d-vn.fcnode.net",
+      "server_port": 53570,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇩 印度尼西亚 ID-01",
+      "server": "nbaqz0v1meo0k3d-id.fcnode.net",
+      "server_port": 53571,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇩 印度尼西亚 ID-02",
+      "server": "nbaqz0v1meo0k3d-id.fcnode.net",
+      "server_port": 53572,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 UK-01",
+      "server": "nbaqz0v1meo0k3d-uk.fcnode.net",
+      "server_port": 53573,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 UK-02",
+      "server": "nbaqz0v1meo0k3d-uk.fcnode.net",
+      "server_port": 53574,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 DE-01",
+      "server": "nbaqz0v1meo0k3d-de.fcnode.net",
+      "server_port": 53575,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 DE-02",
+      "server": "nbaqz0v1meo0k3d-de.fcnode.net",
+      "server_port": 53576,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 FR-01",
+      "server": "nbaqz0v1meo0k3d-fr.fcnode.net",
+      "server_port": 53577,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 FR-02",
+      "server": "nbaqz0v1meo0k3d-fr.fcnode.net",
+      "server_port": 53578,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 TR-01",
+      "server": "nbaqz0v1meo0k3d-tr.fcnode.net",
+      "server_port": 53579,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 TR-02",
+      "server": "nbaqz0v1meo0k3d-tr.fcnode.net",
+      "server_port": 53580,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇷 巴西 BR-01",
+      "server": "nbaqz0v1meo0k3d-br.fcnode.net",
+      "server_port": 53581,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇷 巴西 BR-02",
+      "server": "nbaqz0v1meo0k3d-br.fcnode.net",
+      "server_port": 53582,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇷 阿根廷 AR-01",
+      "server": "nbaqz0v1meo0k3d-ar.fcnode.net",
+      "server_port": 53583,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇷 阿根廷 AR-02",
+      "server": "nbaqz0v1meo0k3d-ar.fcnode.net",
+      "server_port": 53584,
+      "password": "0136755e-6c38-4156-8e17-d878c005df85",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless+reality",
+      "server": "mydm.arklee.asia",
+      "server_port": 11600,
+      "uuid": "97028538-00f2-4cee-bf1e-516fd0cd3a77",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vincentde.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "68WwGWDtfgRhec9y5-v7tLEot87zFiJREHOSrlKrNic",
+          "short_id": "fddc30cef3d4701a"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria",
+      "server": "mydm.arklee.asia",
+      "server_port": 4443,
+      "up_mbps": 20,
+      "down_mbps": 500,
+      "password": "imchallenger",
+      "tls": {
+        "enabled": true,
+        "server_name": "mydm.arklee.asia"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess+ws",
+      "server": "154.26.188.93",
+      "server_port": 45455,
+      "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7",
+      "security": "auto",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/ec26ffd6"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "CF_T8_usa.visa.com_443",
+      "server": "usa.visa.com",
+      "server_port": 443,
+      "password": "lfz20000107trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "arklee.asia"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "CF_T9_myanmar.visa.com_8443",
+      "server": "myanmar.visa.com",
+      "server_port": 8443,
+      "password": "lfz20000107trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "arklee.asia"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "CF_T10_www.visa.com.tw_2053",
+      "server": "www.visa.com.tw",
+      "server_port": 2053,
+      "password": "lfz20000107trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "arklee.asia"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "CF_T11_www.visaeurope.ch_2083",
+      "server": "www.visaeurope.ch",
+      "server_port": 2083,
+      "password": "lfz20000107trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "arklee.asia"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "CF_T12_www.visa.com.br_2087",
+      "server": "www.visa.com.br",
+      "server_port": 2087,
+      "password": "lfz20000107trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "arklee.asia"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "CF_T13_www.visasoutheasteurope.com_2096",
+      "server": "www.visasoutheasteurope.com",
+      "server_port": 2096,
+      "password": "lfz20000107trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "arklee.asia"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 香港00",
+      "server": "8h7rvqnew.bigmeyear.org",
+      "server_port": 20000,
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec",
+      "tls": {
+        "enabled": true,
+        "server_name": "mirrorcos.bilivideo.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 香港01",
+      "server": "o5gemqnew.bigmeyear.org",
+      "server_port": 20001,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 香港02",
+      "server": "4mkdx0new.bigmeyear.org",
+      "server_port": 20232,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 香港03",
+      "server": "7wsittnew.bigmeyear.org",
+      "server_port": 20233,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 香港04",
+      "server": "dmshs4new.bigmeyear.org",
+      "server_port": 20234,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳 台湾01",
+      "server": "npunapnew.bigmeyear.org",
+      "server_port": 20334,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳 台湾02",
+      "server": "pvmatwnew.bigmeyear.org",
+      "server_port": 20335,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳 台湾03",
+      "server": "z01tytnew.bigmeyear.org",
+      "server_port": 20336,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡01",
+      "server": "goh8x3new.bigmeyear.org",
+      "server_port": 30234,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡02",
+      "server": "exiczsnew.bigmeyear.org",
+      "server_port": 30235,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡03",
+      "server": "7sshgqnew.bigmeyear.org",
+      "server_port": 30233,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国01",
+      "server": "81xh0xbpnew.bigmeyear.org",
+      "server_port": 30734,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本01",
+      "server": "jp01new.bigmeyear.org",
+      "server_port": 30236,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本02",
+      "server": "jp02new.bigmeyear.org",
+      "server_port": 30237,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本03",
+      "server": "jp03new.bigmeyear.org",
+      "server_port": 30250,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国01",
+      "server": "us01new.bigmeyear.org",
+      "server_port": 30238,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国02",
+      "server": "us02new.bigmeyear.org",
+      "server_port": 30240,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国03",
+      "server": "us03new.bigmeyear.org",
+      "server_port": 30241,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国01",
+      "server": "rare01new.bigmeyear.org",
+      "server_port": 20702,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其01",
+      "server": "rare02new.bigmeyear.org",
+      "server_port": 20703,
+      "method": "aes-128-gcm",
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🍚 0.1×Hysteria Jp01",
+      "server": "hysteria01.bigmeyear.org",
+      "server_port": 443,
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🍚 0.1×Hysteria Sg01",
+      "server": "hysteria02.bigmeyear.org",
+      "server_port": 443,
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🍚 0.1×Hysteria Jp02",
+      "server": "hysteria03.bigmeyear.org",
+      "server_port": 443,
+      "password": "95ac9222-600f-496a-9bd7-01c999cfcdec",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "url-test",
+        "最新网址：fatcatcloud.cc",
+        "剩余流量：254.5 GB",
+        "距离下次重置剩余：5 天",
+        "套餐到期：2025-02-20",
+        "🇭🇰 香港 HK-01",
+        "🇭🇰 香港 HK-02",
+        "🇭🇰 香港 HK-03",
+        "🇭🇰 香港 HK-04",
+        "🇭🇰 香港 HK-05",
+        "🇭🇰 香港 HK-06",
+        "🇭🇰 香港 HK-07",
+        "🇭🇰 香港 HK-08",
+        "🇭🇰 香港 HK-09",
+        "🇭🇰 香港 HK-10",
+        "🇭🇰 香港 HK-11",
+        "🇭🇰 香港 HK-12",
+        "🇭🇰 香港 HK-13",
+        "🇭🇰 香港 HK-14",
+        "🇭🇰 香港 HK-15",
+        "🇭🇰 香港 HK-16",
+        "🇭🇰 香港 HK-17",
+        "🇭🇰 香港 HK-18",
+        "🇭🇰 香港 HK-19",
+        "🇭🇰 香港 HK-20",
+        "🇹🇼 台湾 TW-01",
+        "🇹🇼 台湾 TW-02",
+        "🇹🇼 台湾 TW-03",
+        "🇹🇼 台湾 TW-04",
+        "🇹🇼 台湾 TW-05",
+        "🇹🇼 台湾 TW-06",
+        "🇹🇼 台湾 TW-07",
+        "🇹🇼 台湾 TW-08",
+        "🇹🇼 台湾 TW-09",
+        "🇹🇼 台湾 TW-10",
+        "🇸🇬 新加坡 SG-01",
+        "🇸🇬 新加坡 SG-02",
+        "🇸🇬 新加坡 SG-03",
+        "🇸🇬 新加坡 SG-04",
+        "🇸🇬 新加坡 SG-05",
+        "🇸🇬 新加坡 SG-06",
+        "🇸🇬 新加坡 SG-07",
+        "🇸🇬 新加坡 SG-08",
+        "🇸🇬 新加坡 SG-09",
+        "🇸🇬 新加坡 SG-10",
+        "🇯🇵 日本 JP-01",
+        "🇯🇵 日本 JP-02",
+        "🇯🇵 日本 JP-03",
+        "🇯🇵 日本 JP-04",
+        "🇯🇵 日本 JP-05",
+        "🇯🇵 日本 JP-06",
+        "🇯🇵 日本 JP-07",
+        "🇯🇵 日本 JP-08",
+        "🇯🇵 日本 JP-09",
+        "🇯🇵 日本 JP-10",
+        "🇺🇸 美国 US-01",
+        "🇺🇸 美国 US-02",
+        "🇺🇸 美国 US-03",
+        "🇺🇸 美国 US-04",
+        "🇺🇸 美国 US-05",
+        "🇺🇸 美国 US-06",
+        "🇺🇸 美国 US-07",
+        "🇺🇸 美国 US-08",
+        "🇺🇸 美国 US-09",
+        "🇺🇸 美国 US-10",
+        "🇰🇷 韩国 KR-01",
+        "🇰🇷 韩国 KR-02",
+        "🇲🇾 马来西亚 MY-01",
+        "🇲🇾 马来西亚 MY-02",
+        "🇹🇭 泰国 TH-01",
+        "🇹🇭 泰国 TH-02",
+        "🇵🇭 菲律宾 PH-01",
+        "🇵🇭 菲律宾 PH-02",
+        "🇻🇳 越南 VN-01",
+        "🇻🇳 越南 VN-02",
+        "🇮🇩 印度尼西亚 ID-01",
+        "🇮🇩 印度尼西亚 ID-02",
+        "🇬🇧 英国 UK-01",
+        "🇬🇧 英国 UK-02",
+        "🇩🇪 德国 DE-01",
+        "🇩🇪 德国 DE-02",
+        "🇫🇷 法国 FR-01",
+        "🇫🇷 法国 FR-02",
+        "🇹🇷 土耳其 TR-01",
+        "🇹🇷 土耳其 TR-02",
+        "🇧🇷 巴西 BR-01",
+        "🇧🇷 巴西 BR-02",
+        "🇦🇷 阿根廷 AR-01",
+        "🇦🇷 阿根廷 AR-02",
+        "vless+reality",
+        "hysteria",
+        "vmess+ws",
+        "CF_T8_usa.visa.com_443",
+        "CF_T9_myanmar.visa.com_8443",
+        "CF_T10_www.visa.com.tw_2053",
+        "CF_T11_www.visaeurope.ch_2083",
+        "CF_T12_www.visa.com.br_2087",
+        "CF_T13_www.visasoutheasteurope.com_2096",
+        "🇭🇰 香港00",
+        "🇭🇰 香港01",
+        "🇭🇰 香港02",
+        "🇭🇰 香港03",
+        "🇭🇰 香港04",
+        "🇨🇳 台湾01",
+        "🇨🇳 台湾02",
+        "🇨🇳 台湾03",
+        "🇸🇬 新加坡01",
+        "🇸🇬 新加坡02",
+        "🇸🇬 新加坡03",
+        "🇰🇷 韩国01",
+        "🇯🇵 日本01",
+        "🇯🇵 日本02",
+        "🇯🇵 日本03",
+        "🇺🇸 美国01",
+        "🇺🇸 美国02",
+        "🇺🇸 美国03",
+        "🇩🇪 德国01",
+        "🇹🇷 土耳其01",
+        "🍚 0.1×Hysteria Jp01",
+        "🍚 0.1×Hysteria Sg01",
+        "🍚 0.1×Hysteria Jp02"
+      ],
+      "default": "url-test"
+    },
+    {
+      "type": "urltest",
+      "tag": "url-test",
+      "outbounds": [
+        "最新网址：fatcatcloud.cc",
+        "剩余流量：254.5 GB",
+        "距离下次重置剩余：5 天",
+        "套餐到期：2025-02-20",
+        "🇭🇰 香港 HK-01",
+        "🇭🇰 香港 HK-02",
+        "🇭🇰 香港 HK-03",
+        "🇭🇰 香港 HK-04",
+        "🇭🇰 香港 HK-05",
+        "🇭🇰 香港 HK-06",
+        "🇭🇰 香港 HK-07",
+        "🇭🇰 香港 HK-08",
+        "🇭🇰 香港 HK-09",
+        "🇭🇰 香港 HK-10",
+        "🇭🇰 香港 HK-11",
+        "🇭🇰 香港 HK-12",
+        "🇭🇰 香港 HK-13",
+        "🇭🇰 香港 HK-14",
+        "🇭🇰 香港 HK-15",
+        "🇭🇰 香港 HK-16",
+        "🇭🇰 香港 HK-17",
+        "🇭🇰 香港 HK-18",
+        "🇭🇰 香港 HK-19",
+        "🇭🇰 香港 HK-20",
+        "🇹🇼 台湾 TW-01",
+        "🇹🇼 台湾 TW-02",
+        "🇹🇼 台湾 TW-03",
+        "🇹🇼 台湾 TW-04",
+        "🇹🇼 台湾 TW-05",
+        "🇹🇼 台湾 TW-06",
+        "🇹🇼 台湾 TW-07",
+        "🇹🇼 台湾 TW-08",
+        "🇹🇼 台湾 TW-09",
+        "🇹🇼 台湾 TW-10",
+        "🇸🇬 新加坡 SG-01",
+        "🇸🇬 新加坡 SG-02",
+        "🇸🇬 新加坡 SG-03",
+        "🇸🇬 新加坡 SG-04",
+        "🇸🇬 新加坡 SG-05",
+        "🇸🇬 新加坡 SG-06",
+        "🇸🇬 新加坡 SG-07",
+        "🇸🇬 新加坡 SG-08",
+        "🇸🇬 新加坡 SG-09",
+        "🇸🇬 新加坡 SG-10",
+        "🇯🇵 日本 JP-01",
+        "🇯🇵 日本 JP-02",
+        "🇯🇵 日本 JP-03",
+        "🇯🇵 日本 JP-04",
+        "🇯🇵 日本 JP-05",
+        "🇯🇵 日本 JP-06",
+        "🇯🇵 日本 JP-07",
+        "🇯🇵 日本 JP-08",
+        "🇯🇵 日本 JP-09",
+        "🇯🇵 日本 JP-10",
+        "🇺🇸 美国 US-01",
+        "🇺🇸 美国 US-02",
+        "🇺🇸 美国 US-03",
+        "🇺🇸 美国 US-04",
+        "🇺🇸 美国 US-05",
+        "🇺🇸 美国 US-06",
+        "🇺🇸 美国 US-07",
+        "🇺🇸 美国 US-08",
+        "🇺🇸 美国 US-09",
+        "🇺🇸 美国 US-10",
+        "🇰🇷 韩国 KR-01",
+        "🇰🇷 韩国 KR-02",
+        "🇲🇾 马来西亚 MY-01",
+        "🇲🇾 马来西亚 MY-02",
+        "🇹🇭 泰国 TH-01",
+        "🇹🇭 泰国 TH-02",
+        "🇵🇭 菲律宾 PH-01",
+        "🇵🇭 菲律宾 PH-02",
+        "🇻🇳 越南 VN-01",
+        "🇻🇳 越南 VN-02",
+        "🇮🇩 印度尼西亚 ID-01",
+        "🇮🇩 印度尼西亚 ID-02",
+        "🇬🇧 英国 UK-01",
+        "🇬🇧 英国 UK-02",
+        "🇩🇪 德国 DE-01",
+        "🇩🇪 德国 DE-02",
+        "🇫🇷 法国 FR-01",
+        "🇫🇷 法国 FR-02",
+        "🇹🇷 土耳其 TR-01",
+        "🇹🇷 土耳其 TR-02",
+        "🇧🇷 巴西 BR-01",
+        "🇧🇷 巴西 BR-02",
+        "🇦🇷 阿根廷 AR-01",
+        "🇦🇷 阿根廷 AR-02",
+        "vless+reality",
+        "hysteria",
+        "vmess+ws",
+        "CF_T8_usa.visa.com_443",
+        "CF_T9_myanmar.visa.com_8443",
+        "CF_T10_www.visa.com.tw_2053",
+        "CF_T11_www.visaeurope.ch_2083",
+        "CF_T12_www.visa.com.br_2087",
+        "CF_T13_www.visasoutheasteurope.com_2096",
+        "🇭🇰 香港00",
+        "🇭🇰 香港01",
+        "🇭🇰 香港02",
+        "🇭🇰 香港03",
+        "🇭🇰 香港04",
+        "🇨🇳 台湾01",
+        "🇨🇳 台湾02",
+        "🇨🇳 台湾03",
+        "🇸🇬 新加坡01",
+        "🇸🇬 新加坡02",
+        "🇸🇬 新加坡03",
+        "🇰🇷 韩国01",
+        "🇯🇵 日本01",
+        "🇯🇵 日本02",
+        "🇯🇵 日本03",
+        "🇺🇸 美国01",
+        "🇺🇸 美国02",
+        "🇺🇸 美国03",
+        "🇩🇪 德国01",
+        "🇹🇷 土耳其01",
+        "🍚 0.1×Hysteria Jp01",
+        "🍚 0.1×Hysteria Sg01",
+        "🍚 0.1×Hysteria Jp02"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m0s",
+      "tolerance": 50
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "outbound": "dns_out"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "outbound": "reject"
+      },
+      {
+        "rule_set": "geoip-cn",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "outbound": "direct"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "outbound": "select"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+        "download_detour": "select",
+        "update_interval": "24h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+        "download_detour": "select",
+        "update_interval": "24h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-geolocation-!cn",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "download_detour": "select",
+        "update_interval": "24h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
+        "download_detour": "select",
+        "update_interval": "24h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "./dashboard"
+    }
+  }
+}

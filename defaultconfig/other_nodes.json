@@ -1,0 +1,208 @@
+{
+    "outbounds": [
+        {
+            "type": "vless",
+            "tag": "vless+reality",
+            "server": "mydm.arklee.asia",
+            "server_port": 11600,
+            "uuid": "97028538-00f2-4cee-bf1e-516fd0cd3a77",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "server_name": "www.vincentde.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "68WwGWDtfgRhec9y5-v7tLEot87zFiJREHOSrlKrNic",
+                    "short_id": "fddc30cef3d4701a"
+                }
+            },
+            "network": "tcp",
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "hysteria",
+            "server": "mydm.arklee.asia",
+            "server_port": 4443,
+            "up_mbps": 20,
+            "down_mbps": 500,
+            "password": "imchallenger",
+            "tls": {
+                "enabled": true,
+                "server_name": "mydm.arklee.asia",
+                "insecure": false
+            }
+        },
+        {
+            "type": "vmess",
+            "tag": "vmess+ws",
+            "server": "154.26.188.93",
+            "server_port": 45455,
+            "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7",
+            "alter_id": 0,
+            "security": "auto",
+            "transport": {
+                "type": "ws",
+                "path": "/ec26ffd6",
+                "headers": {}
+            },
+            "network": "tcp",
+            "tcp_fast_open": false
+        },
+        {
+            "server": "usa.visa.com",
+            "server_port": 443,
+            "tag": "CF_T8_usa.visa.com_443",
+            "tls": {
+                "enabled": true,
+                "server_name": "arklee.asia",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "arklee.asia"
+                    ]
+                },
+                "path": "/?ed=2560",
+                "type": "ws"
+            },
+            "type": "trojan",
+            "password": "lfz20000107trojan"
+        },
+        {
+            "server": "myanmar.visa.com",
+            "server_port": 8443,
+            "tag": "CF_T9_myanmar.visa.com_8443",
+            "tls": {
+                "enabled": true,
+                "server_name": "arklee.asia",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "arklee.asia"
+                    ]
+                },
+                "path": "/?ed=2560",
+                "type": "ws"
+            },
+            "type": "trojan",
+            "password": "lfz20000107trojan"
+        },
+        {
+            "server": "www.visa.com.tw",
+            "server_port": 2053,
+            "tag": "CF_T10_www.visa.com.tw_2053",
+            "tls": {
+                "enabled": true,
+                "server_name": "arklee.asia",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "arklee.asia"
+                    ]
+                },
+                "path": "/?ed=2560",
+                "type": "ws"
+            },
+            "type": "trojan",
+            "password": "lfz20000107trojan"
+        },
+        {
+            "server": "www.visaeurope.ch",
+            "server_port": 2083,
+            "tag": "CF_T11_www.visaeurope.ch_2083",
+            "tls": {
+                "enabled": true,
+                "server_name": "arklee.asia",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "arklee.asia"
+                    ]
+                },
+                "path": "/?ed=2560",
+                "type": "ws"
+            },
+            "type": "trojan",
+            "password": "lfz20000107trojan"
+        },
+        {
+            "server": "www.visa.com.br",
+            "server_port": 2087,
+            "tag": "CF_T12_www.visa.com.br_2087",
+            "tls": {
+                "enabled": true,
+                "server_name": "arklee.asia",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "arklee.asia"
+                    ]
+                },
+                "path": "/?ed=2560",
+                "type": "ws"
+            },
+            "type": "trojan",
+            "password": "lfz20000107trojan"
+        },
+        {
+            "server": "www.visasoutheasteurope.com",
+            "server_port": 2096,
+            "tag": "CF_T13_www.visasoutheasteurope.com_2096",
+            "tls": {
+                "enabled": true,
+                "server_name": "arklee.asia",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "arklee.asia"
+                    ]
+                },
+                "path": "/?ed=2560",
+                "type": "ws"
+            },
+            "type": "trojan",
+            "password": "lfz20000107trojan"
+        }
+    ]
+}
