@@ -1,6 +1,9 @@
 http://mydm.arklee.asia:2096/imchallengersub/5zmnj7o23jjcp670?name=5zmnj7o23jjcp670
-http://mydm.arklee.asia:2096/imchallengersub/5zmnj7o23jjcp670?name=5zmnj7o23jjcp670
-hysteria2://imchallenger@mydm.arklee.asia:4445?peer=mydm.arklee.asia#hysteria2
+http://mydm.arklee.asia:2096/imchallengersub/d08f724mfq2gkvod?name=d08f724mfq2gkvod
+
+vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ2bWVzcyt3cy1xYzBzcGY1MHEiLAogICJhZGQiOiAibXlkbS5hcmtsZWUuYXNpYSIsCiAgInBvcnQiOiA0NTQ1NiwKICAiaWQiOiAiZWMyNmZmZDYtNmJkNy00YWRiLWFkN2MtZjRhOTlmMjFhOGM3IiwKICAic2N5IjogImF1dG8iLAogICJuZXQiOiAid3MiLAogICJ0eXBlIjogIm5vbmUiLAogICJ0bHMiOiAibm9uZSIsCiAgInBhdGgiOiAiL2VjMjZmZmQ2IiwKICAiaG9zdCI6ICIiCn0=
+vless://97028538-00f2-4cee-bf1e-516fd0cd3a77@mydm.arklee.asia:11600?type=tcp&security=reality&pbk=68WwGWDtfgRhec9y5-v7tLEot87zFiJREHOSrlKrNic&fp=random&sni=www.vincentde.com&sid=fddc30cef3d4701a&spx=%2F&flow=xtls-rprx-vision#vless%2Breality%2Bvision-qh9o9rap
+hysteria2://imchallenger@mydm.arklee.asia:4446?peer=bing.com&downmbps=500mbps&upmbps=20mbps#hysteria2
 https://bigmesub001.azure-api.net/happy/api/v1/client/subscribe?token=1ec4e5d58bfdb86340d6fd82184d1571&flag=sing-box&types=all
 https://fcsblka.fcsubcn.cc:2096/api/v1/client/subscribe?token=8788dd5b8aa58ccf6a1f4a81a10eb4b1
-https://arklee.asia/lfz20000107trojan/pty
+https://myt.arklee.asia/d73a0e02-fb29-41f4-9d8f-67645555b231/pty

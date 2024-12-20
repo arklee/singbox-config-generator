@@ -94,7 +94,7 @@
     {
       "type": "trojan",
       "tag": "最新网址：fatcatcloud.cc",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -104,8 +104,8 @@
     },
     {
       "type": "trojan",
-      "tag": "剩余流量：254.5 GB",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "tag": "剩余流量：374.4 GB",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -115,8 +115,8 @@
     },
     {
       "type": "trojan",
-      "tag": "距离下次重置剩余：5 天",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "tag": "距离下次重置剩余：30 天",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -127,7 +127,7 @@
     {
       "type": "trojan",
       "tag": "套餐到期：2025-02-20",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -138,7 +138,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-01",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -149,7 +149,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-02",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53502,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -160,7 +160,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-03",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53503,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -171,7 +171,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-04",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53504,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -182,7 +182,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-05",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53505,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -193,7 +193,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-06",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53506,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -204,7 +204,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-07",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53507,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -215,7 +215,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-08",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53508,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -226,7 +226,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-09",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53509,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -237,7 +237,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-10",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53510,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -248,7 +248,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-11",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53511,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -259,7 +259,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-12",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53512,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -270,7 +270,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-13",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53513,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -281,7 +281,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-14",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53514,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -292,7 +292,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-15",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53515,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -303,7 +303,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-16",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53516,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -314,7 +314,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-17",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53517,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -325,7 +325,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-18",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53518,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -336,7 +336,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-19",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53519,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -347,7 +347,7 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 香港 HK-20",
-      "server": "nbaqz0v1meo0k3d-hk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53520,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -358,7 +358,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-01",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53521,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -369,7 +369,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-02",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53522,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -380,7 +380,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-03",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53523,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -391,7 +391,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-04",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53524,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -402,7 +402,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-05",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53525,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -413,7 +413,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-06",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53526,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -424,7 +424,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-07",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53527,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -435,7 +435,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-08",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53528,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -446,7 +446,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-09",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53529,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -457,7 +457,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 台湾 TW-10",
-      "server": "nbaqz0v1meo0k3d-tw.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tw.fcnode.net",
       "server_port": 53530,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -468,7 +468,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-01",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53531,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -479,7 +479,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-02",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53532,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -490,7 +490,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-03",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53533,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -501,7 +501,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-04",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53534,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -512,7 +512,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-05",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53535,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -523,7 +523,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-06",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53536,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -534,7 +534,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-07",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53537,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -545,7 +545,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-08",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53538,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -556,7 +556,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-09",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53539,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -567,7 +567,7 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 SG-10",
-      "server": "nbaqz0v1meo0k3d-sg.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-sg.fcnode.net",
       "server_port": 53540,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -578,7 +578,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-01",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53541,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -589,7 +589,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-02",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53542,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -600,7 +600,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-03",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53543,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -611,7 +611,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-04",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53544,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -622,7 +622,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-05",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53545,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -633,7 +633,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-06",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53546,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -644,7 +644,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-07",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53547,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -655,7 +655,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-08",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53548,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -666,7 +666,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-09",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53549,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -677,7 +677,7 @@
     {
       "type": "trojan",
       "tag": "🇯🇵 日本 JP-10",
-      "server": "nbaqz0v1meo0k3d-jp.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-jp.fcnode.net",
       "server_port": 53550,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -688,7 +688,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-01",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53551,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -699,7 +699,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-02",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53552,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -710,7 +710,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-03",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53553,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -721,7 +721,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-04",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53554,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -732,7 +732,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-05",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53555,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -743,7 +743,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-06",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53556,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -754,7 +754,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-07",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53557,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -765,7 +765,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-08",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53558,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -776,7 +776,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-09",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53559,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -787,7 +787,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 US-10",
-      "server": "nbaqz0v1meo0k3d-us.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-us.fcnode.net",
       "server_port": 53560,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -798,7 +798,7 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 KR-01",
-      "server": "nbaqz0v1meo0k3d-kr.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-kr.fcnode.net",
       "server_port": 53561,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -809,7 +809,7 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 KR-02",
-      "server": "nbaqz0v1meo0k3d-kr.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-kr.fcnode.net",
       "server_port": 53562,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -820,7 +820,7 @@
     {
       "type": "trojan",
       "tag": "🇲🇾 马来西亚 MY-01",
-      "server": "nbaqz0v1meo0k3d-my.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-my.fcnode.net",
       "server_port": 53563,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -831,7 +831,7 @@
     {
       "type": "trojan",
       "tag": "🇲🇾 马来西亚 MY-02",
-      "server": "nbaqz0v1meo0k3d-my.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-my.fcnode.net",
       "server_port": 53564,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -842,7 +842,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇭 泰国 TH-01",
-      "server": "nbaqz0v1meo0k3d-th.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-th.fcnode.net",
       "server_port": 53565,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -853,7 +853,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇭 泰国 TH-02",
-      "server": "nbaqz0v1meo0k3d-th.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-th.fcnode.net",
       "server_port": 53566,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -864,7 +864,7 @@
     {
       "type": "trojan",
       "tag": "🇵🇭 菲律宾 PH-01",
-      "server": "nbaqz0v1meo0k3d-ph.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-ph.fcnode.net",
       "server_port": 53567,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -875,7 +875,7 @@
     {
       "type": "trojan",
       "tag": "🇵🇭 菲律宾 PH-02",
-      "server": "nbaqz0v1meo0k3d-ph.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-ph.fcnode.net",
       "server_port": 53568,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -886,7 +886,7 @@
     {
       "type": "trojan",
       "tag": "🇻🇳 越南 VN-01",
-      "server": "nbaqz0v1meo0k3d-vn.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-vn.fcnode.net",
       "server_port": 53569,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -897,7 +897,7 @@
     {
       "type": "trojan",
       "tag": "🇻🇳 越南 VN-02",
-      "server": "nbaqz0v1meo0k3d-vn.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-vn.fcnode.net",
       "server_port": 53570,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -908,7 +908,7 @@
     {
       "type": "trojan",
       "tag": "🇮🇩 印度尼西亚 ID-01",
-      "server": "nbaqz0v1meo0k3d-id.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-id.fcnode.net",
       "server_port": 53571,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -919,7 +919,7 @@
     {
       "type": "trojan",
       "tag": "🇮🇩 印度尼西亚 ID-02",
-      "server": "nbaqz0v1meo0k3d-id.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-id.fcnode.net",
       "server_port": 53572,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -930,7 +930,7 @@
     {
       "type": "trojan",
       "tag": "🇬🇧 英国 UK-01",
-      "server": "nbaqz0v1meo0k3d-uk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-uk.fcnode.net",
       "server_port": 53573,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -941,7 +941,7 @@
     {
       "type": "trojan",
       "tag": "🇬🇧 英国 UK-02",
-      "server": "nbaqz0v1meo0k3d-uk.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-uk.fcnode.net",
       "server_port": 53574,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -952,7 +952,7 @@
     {
       "type": "trojan",
       "tag": "🇩🇪 德国 DE-01",
-      "server": "nbaqz0v1meo0k3d-de.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-de.fcnode.net",
       "server_port": 53575,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -963,7 +963,7 @@
     {
       "type": "trojan",
       "tag": "🇩🇪 德国 DE-02",
-      "server": "nbaqz0v1meo0k3d-de.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-de.fcnode.net",
       "server_port": 53576,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -974,7 +974,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 FR-01",
-      "server": "nbaqz0v1meo0k3d-fr.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-fr.fcnode.net",
       "server_port": 53577,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -985,7 +985,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 FR-02",
-      "server": "nbaqz0v1meo0k3d-fr.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-fr.fcnode.net",
       "server_port": 53578,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -996,7 +996,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇷 土耳其 TR-01",
-      "server": "nbaqz0v1meo0k3d-tr.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tr.fcnode.net",
       "server_port": 53579,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -1007,7 +1007,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇷 土耳其 TR-02",
-      "server": "nbaqz0v1meo0k3d-tr.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-tr.fcnode.net",
       "server_port": 53580,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -1018,7 +1018,7 @@
     {
       "type": "trojan",
       "tag": "🇧🇷 巴西 BR-01",
-      "server": "nbaqz0v1meo0k3d-br.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-br.fcnode.net",
       "server_port": 53581,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -1029,7 +1029,7 @@
     {
       "type": "trojan",
       "tag": "🇧🇷 巴西 BR-02",
-      "server": "nbaqz0v1meo0k3d-br.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-br.fcnode.net",
       "server_port": 53582,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -1040,7 +1040,7 @@
     {
       "type": "trojan",
       "tag": "🇦🇷 阿根廷 AR-01",
-      "server": "nbaqz0v1meo0k3d-ar.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-ar.fcnode.net",
       "server_port": 53583,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
@@ -1051,12 +1051,25 @@
     {
       "type": "trojan",
       "tag": "🇦🇷 阿根廷 AR-02",
-      "server": "nbaqz0v1meo0k3d-ar.fcnode.net",
+      "server": "nbaqz0vlmeo0k3d-ar.fcnode.net",
       "server_port": 53584,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
       "tls": {
         "enabled": true,
         "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria",
+      "server": "mydm.arklee.asia",
+      "server_port": 4446,
+      "up_mbps": 50,
+      "down_mbps": 1000,
+      "password": "imchallenger",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com"
       }
     },
     {
@@ -1082,40 +1095,14 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria",
-      "server": "mydm.arklee.asia",
-      "server_port": 4443,
-      "up_mbps": 20,
-      "down_mbps": 500,
-      "password": "imchallenger",
-      "tls": {
-        "enabled": true,
-        "server_name": "mydm.arklee.asia"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess+ws",
-      "server": "154.26.188.93",
-      "server_port": 45455,
-      "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7",
-      "security": "auto",
-      "network": "tcp",
-      "transport": {
-        "type": "ws",
-        "path": "/ec26ffd6"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "CF_T8_usa.visa.com_443",
+      "type": "vless",
+      "tag": "CF_V8_usa.visa.com_443",
       "server": "usa.visa.com",
       "server_port": 443,
-      "password": "lfz20000107trojan",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231",
       "tls": {
         "enabled": true,
-        "server_name": "arklee.asia",
+        "server_name": "myt.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1125,19 +1112,20 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "arklee.asia"
+          "Host": "myt.arklee.asia"
         }
-      }
+      },
+      "packet_encoding": "packetaddr"
     },
     {
-      "type": "trojan",
-      "tag": "CF_T9_myanmar.visa.com_8443",
+      "type": "vless",
+      "tag": "CF_V9_myanmar.visa.com_8443",
       "server": "myanmar.visa.com",
       "server_port": 8443,
-      "password": "lfz20000107trojan",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231",
       "tls": {
         "enabled": true,
-        "server_name": "arklee.asia",
+        "server_name": "myt.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1147,19 +1135,20 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "arklee.asia"
+          "Host": "myt.arklee.asia"
         }
-      }
+      },
+      "packet_encoding": "packetaddr"
     },
     {
-      "type": "trojan",
-      "tag": "CF_T10_www.visa.com.tw_2053",
+      "type": "vless",
+      "tag": "CF_V10_www.visa.com.tw_2053",
       "server": "www.visa.com.tw",
       "server_port": 2053,
-      "password": "lfz20000107trojan",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231",
       "tls": {
         "enabled": true,
-        "server_name": "arklee.asia",
+        "server_name": "myt.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1169,19 +1158,20 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "arklee.asia"
+          "Host": "myt.arklee.asia"
         }
-      }
+      },
+      "packet_encoding": "packetaddr"
     },
     {
-      "type": "trojan",
-      "tag": "CF_T11_www.visaeurope.ch_2083",
+      "type": "vless",
+      "tag": "CF_V11_www.visaeurope.ch_2083",
       "server": "www.visaeurope.ch",
       "server_port": 2083,
-      "password": "lfz20000107trojan",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231",
       "tls": {
         "enabled": true,
-        "server_name": "arklee.asia",
+        "server_name": "myt.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1191,19 +1181,20 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "arklee.asia"
+          "Host": "myt.arklee.asia"
         }
-      }
+      },
+      "packet_encoding": "packetaddr"
     },
     {
-      "type": "trojan",
-      "tag": "CF_T12_www.visa.com.br_2087",
+      "type": "vless",
+      "tag": "CF_V12_www.visa.com.br_2087",
       "server": "www.visa.com.br",
       "server_port": 2087,
-      "password": "lfz20000107trojan",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231",
       "tls": {
         "enabled": true,
-        "server_name": "arklee.asia",
+        "server_name": "myt.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1213,19 +1204,20 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "arklee.asia"
+          "Host": "myt.arklee.asia"
         }
-      }
+      },
+      "packet_encoding": "packetaddr"
     },
     {
-      "type": "trojan",
-      "tag": "CF_T13_www.visasoutheasteurope.com_2096",
+      "type": "vless",
+      "tag": "CF_V13_www.visasoutheasteurope.com_2096",
       "server": "www.visasoutheasteurope.com",
       "server_port": 2096,
-      "password": "lfz20000107trojan",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231",
       "tls": {
         "enabled": true,
-        "server_name": "arklee.asia",
+        "server_name": "myt.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1235,9 +1227,10 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "arklee.asia"
+          "Host": "myt.arklee.asia"
         }
-      }
+      },
+      "packet_encoding": "packetaddr"
     },
     {
       "type": "trojan",
@@ -1445,8 +1438,8 @@
       "outbounds": [
         "url-test",
         "最新网址：fatcatcloud.cc",
-        "剩余流量：254.5 GB",
-        "距离下次重置剩余：5 天",
+        "剩余流量：374.4 GB",
+        "距离下次重置剩余：30 天",
         "套餐到期：2025-02-20",
         "🇭🇰 香港 HK-01",
         "🇭🇰 香港 HK-02",
@@ -1532,15 +1525,14 @@
         "🇧🇷 巴西 BR-02",
         "🇦🇷 阿根廷 AR-01",
         "🇦🇷 阿根廷 AR-02",
-        "vless+reality",
         "hysteria",
-        "vmess+ws",
-        "CF_T8_usa.visa.com_443",
-        "CF_T9_myanmar.visa.com_8443",
-        "CF_T10_www.visa.com.tw_2053",
-        "CF_T11_www.visaeurope.ch_2083",
-        "CF_T12_www.visa.com.br_2087",
-        "CF_T13_www.visasoutheasteurope.com_2096",
+        "vless+reality",
+        "CF_V8_usa.visa.com_443",
+        "CF_V9_myanmar.visa.com_8443",
+        "CF_V10_www.visa.com.tw_2053",
+        "CF_V11_www.visaeurope.ch_2083",
+        "CF_V12_www.visa.com.br_2087",
+        "CF_V13_www.visasoutheasteurope.com_2096",
         "🇭🇰 香港00",
         "🇭🇰 香港01",
         "🇭🇰 香港02",
@@ -1572,8 +1564,8 @@
       "tag": "url-test",
       "outbounds": [
         "最新网址：fatcatcloud.cc",
-        "剩余流量：254.5 GB",
-        "距离下次重置剩余：5 天",
+        "剩余流量：374.4 GB",
+        "距离下次重置剩余：30 天",
         "套餐到期：2025-02-20",
         "🇭🇰 香港 HK-01",
         "🇭🇰 香港 HK-02",
@@ -1659,15 +1651,14 @@
         "🇧🇷 巴西 BR-02",
         "🇦🇷 阿根廷 AR-01",
         "🇦🇷 阿根廷 AR-02",
-        "vless+reality",
         "hysteria",
-        "vmess+ws",
-        "CF_T8_usa.visa.com_443",
-        "CF_T9_myanmar.visa.com_8443",
-        "CF_T10_www.visa.com.tw_2053",
-        "CF_T11_www.visaeurope.ch_2083",
-        "CF_T12_www.visa.com.br_2087",
-        "CF_T13_www.visasoutheasteurope.com_2096",
+        "vless+reality",
+        "CF_V8_usa.visa.com_443",
+        "CF_V9_myanmar.visa.com_8443",
+        "CF_V10_www.visa.com.tw_2053",
+        "CF_V11_www.visaeurope.ch_2083",
+        "CF_V12_www.visa.com.br_2087",
+        "CF_V13_www.visasoutheasteurope.com_2096",
         "🇭🇰 香港00",
         "🇭🇰 香港01",
         "🇭🇰 香港02",
