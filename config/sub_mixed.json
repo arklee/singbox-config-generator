@@ -104,7 +104,7 @@
     },
     {
       "type": "trojan",
-      "tag": "剩余流量：374.4 GB",
+      "tag": "剩余流量：352.09 GB",
       "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
@@ -115,7 +115,7 @@
     },
     {
       "type": "trojan",
-      "tag": "距离下次重置剩余：30 天",
+      "tag": "距离下次重置剩余：26 天",
       "server": "nbaqz0vlmeo0k3d-hk.fcnode.net",
       "server_port": 53501,
       "password": "0136755e-6c38-4156-8e17-d878c005df85",
@@ -1060,39 +1060,100 @@
       }
     },
     {
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": [
+        "auto",
+        "direct",
+        "vmess-ws",
+        "hysteria2",
+        "vless-vision-reality"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "vmess-ws",
+        "hysteria2",
+        "vless-vision-reality"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m0s",
+      "tolerance": 50
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-ws",
+      "server": "mydm.arklee.asia",
+      "server_port": 45456,
+      "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7",
+      "security": "",
+      "transport": {
+        "type": "ws",
+        "path": "/ec26ffd6",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "hysteria",
+      "tag": "hysteria2",
       "server": "mydm.arklee.asia",
       "server_port": 4446,
-      "up_mbps": 50,
-      "down_mbps": 1000,
+      "up_mbps": 30,
+      "down_mbps": 500,
       "password": "imchallenger",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com"
+        "server_name": "mydm.arklee.asia"
       }
     },
     {
       "type": "vless",
-      "tag": "vless+reality",
+      "tag": "vless-vision-reality",
       "server": "mydm.arklee.asia",
-      "server_port": 11600,
-      "uuid": "97028538-00f2-4cee-bf1e-516fd0cd3a77",
+      "server_port": 444,
+      "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7",
       "flow": "xtls-rprx-vision",
-      "network": "tcp",
       "tls": {
         "enabled": true,
-        "server_name": "www.vincentde.com",
+        "server_name": "mydm.arklee.asia",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "68WwGWDtfgRhec9y5-v7tLEot87zFiJREHOSrlKrNic",
-          "short_id": "fddc30cef3d4701a"
+          "public_key": "ED14iezbbqQtVF_Y_k-dtAH5HH8N0W8MIUzKa3fK5DA",
+          "short_id": "68f84c"
         }
       }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "CF_V8_usa.visa.com_443",
+        "CF_V9_myanmar.visa.com_8443",
+        "CF_V10_www.visa.com.tw_2053",
+        "CF_V11_www.visaeurope.ch_2083",
+        "CF_V12_www.visa.com.br_2087",
+        "CF_V13_www.visasoutheasteurope.com_2096"
+      ],
+      "default": "auto"
     },
     {
       "type": "vless",
@@ -1231,6 +1292,25 @@
         }
       },
       "packet_encoding": "packetaddr"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "CF_V8_usa.visa.com_443",
+        "CF_V9_myanmar.visa.com_8443",
+        "CF_V10_www.visa.com.tw_2053",
+        "CF_V11_www.visaeurope.ch_2083",
+        "CF_V12_www.visa.com.br_2087",
+        "CF_V13_www.visasoutheasteurope.com_2096"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m0s",
+      "tolerance": 50
     },
     {
       "type": "trojan",
@@ -1438,8 +1518,8 @@
       "outbounds": [
         "url-test",
         "最新网址：fatcatcloud.cc",
-        "剩余流量：374.4 GB",
-        "距离下次重置剩余：30 天",
+        "剩余流量：352.09 GB",
+        "距离下次重置剩余：26 天",
         "套餐到期：2025-02-20",
         "🇭🇰 香港 HK-01",
         "🇭🇰 香港 HK-02",
@@ -1525,14 +1605,23 @@
         "🇧🇷 巴西 BR-02",
         "🇦🇷 阿根廷 AR-01",
         "🇦🇷 阿根廷 AR-02",
-        "hysteria",
-        "vless+reality",
+        "proxy",
+        "auto",
+        "direct",
+        "dns-out",
+        "block",
+        "vmess-ws",
+        "hysteria2",
+        "vless-vision-reality",
+        "select",
         "CF_V8_usa.visa.com_443",
         "CF_V9_myanmar.visa.com_8443",
         "CF_V10_www.visa.com.tw_2053",
         "CF_V11_www.visaeurope.ch_2083",
         "CF_V12_www.visa.com.br_2087",
         "CF_V13_www.visasoutheasteurope.com_2096",
+        "direct",
+        "auto",
         "🇭🇰 香港00",
         "🇭🇰 香港01",
         "🇭🇰 香港02",
@@ -1564,8 +1653,8 @@
       "tag": "url-test",
       "outbounds": [
         "最新网址：fatcatcloud.cc",
-        "剩余流量：374.4 GB",
-        "距离下次重置剩余：30 天",
+        "剩余流量：352.09 GB",
+        "距离下次重置剩余：26 天",
         "套餐到期：2025-02-20",
         "🇭🇰 香港 HK-01",
         "🇭🇰 香港 HK-02",
@@ -1651,14 +1740,23 @@
         "🇧🇷 巴西 BR-02",
         "🇦🇷 阿根廷 AR-01",
         "🇦🇷 阿根廷 AR-02",
-        "hysteria",
-        "vless+reality",
+        "proxy",
+        "auto",
+        "direct",
+        "dns-out",
+        "block",
+        "vmess-ws",
+        "hysteria2",
+        "vless-vision-reality",
+        "select",
         "CF_V8_usa.visa.com_443",
         "CF_V9_myanmar.visa.com_8443",
         "CF_V10_www.visa.com.tw_2053",
         "CF_V11_www.visaeurope.ch_2083",
         "CF_V12_www.visa.com.br_2087",
         "CF_V13_www.visasoutheasteurope.com_2096",
+        "direct",
+        "auto",
         "🇭🇰 香港00",
         "🇭🇰 香港01",
         "🇭🇰 香港02",

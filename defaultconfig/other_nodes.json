@@ -1,198 +1,277 @@
 {
-    "outbounds": [
-        {
-            "type": "hysteria2",
-            "tag": "hysteria",
-            "server": "mydm.arklee.asia",
-            "server_port": 4446,
-            "up_mbps": 50,
-            "down_mbps": 1000,
-            "password": "imchallenger",
-            "tls": {
-                "enabled": true,
-                "server_name": "bing.com",
-                "insecure": false
-            }
+  "outbounds": [
+    {
+      "outbounds": [
+        "auto",
+        "direct",
+        "vmess-ws",
+        "hysteria2",
+        "vless-vision-reality"
+      ],
+      "tag": "proxy",
+      "type": "selector"
+    },
+    {
+      "interval": "10m",
+      "outbounds": [
+        "vmess-ws",
+        "hysteria2",
+        "vless-vision-reality"
+      ],
+      "tag": "auto",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "server": "mydm.arklee.asia",
+      "server_port": 45456,
+      "tag": "vmess-ws",
+      "tls": {},
+      "transport": {
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "path": "/ec26ffd6",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7"
+    },
+    {
+      "down_mbps": 500,
+      "password": "imchallenger",
+      "server": "mydm.arklee.asia",
+      "server_port": 4446,
+      "tag": "hysteria2",
+      "tls": {
+        "enabled": true,
+        "server_name": "mydm.arklee.asia"
+      },
+      "type": "hysteria2",
+      "up_mbps": 30
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "mydm.arklee.asia",
+      "server_port": 444,
+      "tag": "vless-vision-reality",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "ED14iezbbqQtVF_Y_k-dtAH5HH8N0W8MIUzKa3fK5DA",
+          "short_id": "68f84c"
         },
-        {
-            "type": "vless",
-            "tag": "vless+reality",
-            "server": "mydm.arklee.asia",
-            "server_port": 11600,
-            "uuid": "97028538-00f2-4cee-bf1e-516fd0cd3a77",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "server_name": "www.vincentde.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "68WwGWDtfgRhec9y5-v7tLEot87zFiJREHOSrlKrNic",
-                    "short_id": "fddc30cef3d4701a"
-                }
-            },
-            "network": "tcp",
-            "tcp_fast_open": false
+        "server_name": "mydm.arklee.asia",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {},
+      "type": "vless",
+      "uuid": "ec26ffd6-6bd7-4adb-ad7c-f4a99f21a8c7"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "default": "auto",
+      "outbounds": [
+        "auto",
+        "CF_V8_usa.visa.com_443",
+        "CF_V9_myanmar.visa.com_8443",
+        "CF_V10_www.visa.com.tw_2053",
+        "CF_V11_www.visaeurope.ch_2083",
+        "CF_V12_www.visa.com.br_2087",
+        "CF_V13_www.visasoutheasteurope.com_2096"
+      ]
+    },
+    {
+      "server": "usa.visa.com",
+      "server_port": 443,
+      "tag": "CF_V8_usa.visa.com_443",
+      "tls": {
+        "enabled": true,
+        "server_name": "myt.arklee.asia",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
+        "headers": {
+          "Host": [
+            "myt.arklee.asia"
+          ]
         },
-        {
-            "server": "usa.visa.com",
-            "server_port": 443,
-            "tag": "CF_V8_usa.visa.com_443",
-            "tls": {
-              "enabled": true,
-              "server_name": "myt.arklee.asia",
-              "insecure": false,
-              "utls": {
-                "enabled": true,
-                "fingerprint": "chrome"
-              }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-              "headers": {
-                "Host": [
-                  "myt.arklee.asia"
-                ]
-              },
-              "path": "/?ed=2560",
-              "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
-          },
-          {
-            "server": "myanmar.visa.com",
-            "server_port": 8443,
-            "tag": "CF_V9_myanmar.visa.com_8443",
-            "tls": {
-              "enabled": true,
-              "server_name": "myt.arklee.asia",
-              "insecure": false,
-              "utls": {
-                "enabled": true,
-                "fingerprint": "chrome"
-              }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-              "headers": {
-                "Host": [
-                  "myt.arklee.asia"
-                ]
-              },
-              "path": "/?ed=2560",
-              "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
-          },
-          {
-            "server": "www.visa.com.tw",
-            "server_port": 2053,
-            "tag": "CF_V10_www.visa.com.tw_2053",
-            "tls": {
-              "enabled": true,
-              "server_name": "myt.arklee.asia",
-              "insecure": false,
-              "utls": {
-                "enabled": true,
-                "fingerprint": "chrome"
-              }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-              "headers": {
-                "Host": [
-                  "myt.arklee.asia"
-                ]
-              },
-              "path": "/?ed=2560",
-              "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
-          },
-          {
-            "server": "www.visaeurope.ch",
-            "server_port": 2083,
-            "tag": "CF_V11_www.visaeurope.ch_2083",
-            "tls": {
-              "enabled": true,
-              "server_name": "myt.arklee.asia",
-              "insecure": false,
-              "utls": {
-                "enabled": true,
-                "fingerprint": "chrome"
-              }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-              "headers": {
-                "Host": [
-                  "myt.arklee.asia"
-                ]
-              },
-              "path": "/?ed=2560",
-              "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
-          },
-          {
-            "server": "www.visa.com.br",
-            "server_port": 2087,
-            "tag": "CF_V12_www.visa.com.br_2087",
-            "tls": {
-              "enabled": true,
-              "server_name": "myt.arklee.asia",
-              "insecure": false,
-              "utls": {
-                "enabled": true,
-                "fingerprint": "chrome"
-              }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-              "headers": {
-                "Host": [
-                  "myt.arklee.asia"
-                ]
-              },
-              "path": "/?ed=2560",
-              "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
-          },
-          {
-            "server": "www.visasoutheasteurope.com",
-            "server_port": 2096,
-            "tag": "CF_V13_www.visasoutheasteurope.com_2096",
-            "tls": {
-              "enabled": true,
-              "server_name": "myt.arklee.asia",
-              "insecure": false,
-              "utls": {
-                "enabled": true,
-                "fingerprint": "chrome"
-              }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-              "headers": {
-                "Host": [
-                  "myt.arklee.asia"
-                ]
-              },
-              "path": "/?ed=2560",
-              "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
-          }
-    ]
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
+    },
+    {
+      "server": "myanmar.visa.com",
+      "server_port": 8443,
+      "tag": "CF_V9_myanmar.visa.com_8443",
+      "tls": {
+        "enabled": true,
+        "server_name": "myt.arklee.asia",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
+        "headers": {
+          "Host": [
+            "myt.arklee.asia"
+          ]
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
+    },
+    {
+      "server": "www.visa.com.tw",
+      "server_port": 2053,
+      "tag": "CF_V10_www.visa.com.tw_2053",
+      "tls": {
+        "enabled": true,
+        "server_name": "myt.arklee.asia",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
+        "headers": {
+          "Host": [
+            "myt.arklee.asia"
+          ]
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
+    },
+    {
+      "server": "www.visaeurope.ch",
+      "server_port": 2083,
+      "tag": "CF_V11_www.visaeurope.ch_2083",
+      "tls": {
+        "enabled": true,
+        "server_name": "myt.arklee.asia",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
+        "headers": {
+          "Host": [
+            "myt.arklee.asia"
+          ]
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
+    },
+    {
+      "server": "www.visa.com.br",
+      "server_port": 2087,
+      "tag": "CF_V12_www.visa.com.br_2087",
+      "tls": {
+        "enabled": true,
+        "server_name": "myt.arklee.asia",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
+        "headers": {
+          "Host": [
+            "myt.arklee.asia"
+          ]
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
+    },
+    {
+      "server": "www.visasoutheasteurope.com",
+      "server_port": 2096,
+      "tag": "CF_V13_www.visasoutheasteurope.com_2096",
+      "tls": {
+        "enabled": true,
+        "server_name": "myt.arklee.asia",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
+        "headers": {
+          "Host": [
+            "myt.arklee.asia"
+          ]
+        },
+        "path": "/?ed=2560",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "d73a0e02-fb29-41f4-9d8f-67645555b231"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [
+        "CF_V8_usa.visa.com_443",
+        "CF_V9_myanmar.visa.com_8443",
+        "CF_V10_www.visa.com.tw_2053",
+        "CF_V11_www.visaeurope.ch_2083",
+        "CF_V12_www.visa.com.br_2087",
+        "CF_V13_www.visasoutheasteurope.com_2096"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    }
+  ]
 }
